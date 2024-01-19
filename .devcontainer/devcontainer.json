@@ -1,0 +1,13 @@
+{
+    "image": "node:20",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "dbaeumer.vscode-eslint",
+                "esbenp.prettier-vscode",
+                "MS-vsliveshare.vsliveshare",
+                "ritwickdey.LiveServer"
+            ]
+        }
+    }
+}
