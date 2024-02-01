@@ -1,69 +1,81 @@
-/* Global styles */
-body, html {
-    height: 90%;
+body, h1, h2, h3, p, ul, ol, li, form, table {
     margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 0;
+}
+
+body {
     font-family: Arial, sans-serif;
-    padding: 0;
+    line-height: 1.6;
     background-color: #edf1e8;
+    color: #333;
+    margin: 20px;
 }
 
-.container {
-    text-align: center;
+h1, h2, h3 {
+    color: #333;
 }
 
-.centered-image {
-    max-width: 100%;
-    max-height: 100%;
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
 }
 
-header {
-    background-color: #0fe8ec;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
+h2 {
+    font-size: 1.8em;
+    margin-top: 20px;
 }
 
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    text-align: center;
+h3 {
+    font-size: 1.3em;
+    margin-top: 15px;
 }
 
-nav ul li {
-    display: inline;
-    margin-right: 20px;
+p {
+    margin-bottom: 15px;
 }
 
-main {
-    padding: 20px;
+a {
+    color: #007bff;
+    text-decoration: none;
 }
 
-section {
-    margin-bottom: 20px;
+a:hover {
+    text-decoration: underline;
 }
 
-footer {
-    background-color: #f3bf15;
-    color: #797474;
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th, td {
     padding: 10px;
-    text-align: center;
+    border: 1px solid #ccc;
 }
 
-/* Form styles */
+th {
+    background-color: #f2f2f2;
+}
+
+ul, ol {
+    margin-bottom: 15px;
+}
+
 form {
     width: 60%;
-    max-width: 500px;
-    margin: 0 auto;
+    max-width: 400px;
+    margin: 20px 0;
 }
 
-input[type="text"],
-input[type="email"],
-textarea {
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"] {
     width: 100%;
-    padding: 10px;
+    padding: 8px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
     box-sizing: border-box;
@@ -72,27 +84,17 @@ textarea {
 input[type="submit"] {
     background-color: #333;
     color: #fff;
-    padding: 12px 24px;
+    padding: 10px 20px;
     border: none;
     cursor: pointer;
-    display: inline-block;
 }
 
 input[type="submit"]:hover {
     background-color: #cddb0f;
 }
 
-table {
-    border-collapse: collapse;
-    width: 100%;
-}
-
-th, td {
-    text-align: left;
-    padding: 12px;
-    border: 1px solid #000;
-}
-
-th {
-    background-color: #f2f2f2;
+div {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-top: 20px;
 }
