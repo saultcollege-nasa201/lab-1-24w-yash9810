@@ -1,0 +1,98 @@
+/* Global styles */
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    padding: 0;
+    background-color: #edf1e8;
+}
+
+.container {
+    text-align: center;
+}
+
+.centered-image {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+header {
+    background-color: #f3bf15;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #f3bf15;
+    color: #797474;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Form styles */
+form {
+    width: 60%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+}
+
+input[type="submit"]:hover {
+    background-color: #cddb0f;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    text-align: left;
+    padding: 12px;
+    border: 1px solid #000;
+}
+
+th {
+    background-color: #f2f2f2;
+}
