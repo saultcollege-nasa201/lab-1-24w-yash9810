@@ -12,11 +12,6 @@
 
     <p>This is a simple HTML page containing various elements, with dynamic content generated using PHP.</p>
 
-    <?php
-        $currentDate = date("Y-m-d");
-        echo "<p>Today's date is: $currentDate</p>";
-    ?>
-
     <h2>Links and Images</h2>
     <a href="https://www.example.com">Visit Example.com</a>
 
@@ -63,13 +58,6 @@
         <br>
         <input type="submit" value="Submit">
     </form>
-
-    <?php
-        if ($_SERVER["REQUEST_METHOD"] == "POST") {
-            $username = $_POST["username"];
-            echo "<p>Submitted username: $username</p>";
-        }
-    ?>
 
     <h2>Div Container</h2>
     <div style="border: 1px solid #ccc; padding: 10px;">
