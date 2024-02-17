@@ -1,100 +1,81 @@
-body, h1, h2, h3, p, ul, ol, li, form, table {
-    margin: 0;
-    padding: 0;
-}
-
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #edf1e8;
-    color: #333;
-    margin: 20px;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    background-image: linear-gradient(45deg, #e6e6e6, #fff);
 }
 
-h1, h2, h3 {
-    color: #333;
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
-    font-size: 2.5em;
-    margin-bottom: 10px;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
 }
 
-h2 {
-    font-size: 1.8em;
-    margin-top: 20px;
-}
-
-h3 {
-    font-size: 1.3em;
-    margin-top: 15px;
-}
-
-p {
+.form-group {
     margin-bottom: 15px;
-}
-
-a {
-    color: #007bff;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 15px;
-}
-
-th, td {
-    padding: 10px;
-    border: 1px solid #ccc;
-}
-
-th {
-    background-color: #f2f2f2;
-}
-
-ul, ol {
-    margin-bottom: 15px;
-}
-
-form {
-    width: 60%;
-    max-width: 400px;
-    margin: 20px 0;
 }
 
 label {
     display: block;
+    font-weight: bold;
     margin-bottom: 5px;
+    color: #555;
 }
 
-input[type="text"] {
+input[type="text"],
+textarea {
     width: 100%;
     padding: 8px;
-    margin-bottom: 15px;
     border: 1px solid #ccc;
-    box-sizing: border-box;
+    border-radius: 4px;
+    background-color: #fff;
 }
 
-input[type="submit"] {
-    background-color: #333;
+button {
+    padding: 8px 15px;
+    background-color: #17a2b8;
     color: #fff;
-    padding: 10px 20px;
     border: none;
+    border-radius: 4px;
     cursor: pointer;
+    font-size: 16px;
 }
 
-input[type="submit"]:hover {
-    background-color: #cddb0f;
+button:hover {
+    background-color: #138496;
 }
 
-div {
-    border: 1px solid #ccc;
-    padding: 10px;
+.error-message {
+    color: red;
+    margin-top: 5px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.marquee {
+    text-align: center;
     margin-top: 20px;
+    font-size: 20px;
+    color: #fff;
+    background: linear-gradient(to right, #007bff, #00bcd4, #009688, #673ab7, #f44336, #ff9800);
+    padding: 10px;
+    border-radius: 5px;
+    animation: marquee 10s linear infinite;
+}
+
+@keyframes marquee {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
 }
