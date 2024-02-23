@@ -66,13 +66,13 @@ button:hover {
 
 .marquee {
     text-align: center;
-    margin-top: 20px;
-    font-size: 20px;
+    margin-top: 40px;
+    font-size: 50px;
     color: #fff;
     background: linear-gradient(to right, #007bff, #00bcd4, #009688, #1d9601, #f44336, hsl(62, 100%, 55%));
-    padding: 10px;
-    border-radius: 5px;
-    animation: marquee 10s linear infinite;
+    padding: 18px;
+    border-radius: 8px;
+    animation: marquee 44s linear infinite;
 }
 
 @keyframes marquee {
